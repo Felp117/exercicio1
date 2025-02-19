@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="script/Script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+        <p id="texto" class="principal">
+        Programador é o profissional especializado em escrever, depurar e manter o código-fonte de programas de computador.
+        Seu trabalho envolve converter as necessidades do usuário em instruções que o computador pode seguir para executar
+        tarefas específicas. Utilizando diversas linguagens de programação, como Python, Java ou C++, os programadores
+        criam aplicações, softwares e sistemas que facilitam o dia a dia e otimizam processos em diversos setores. 
+        Além disso, devem estar atentos às mais recentes tecnologias e metodologias de trabalho para garantir que seus 
+        projetos sejam eficientes e atualizados. O trabalho do programador é essencial num mundo cada vez mais digitalizado e dependente da tecnologia.
+    </p>
+    
+    <img src="images/images.jpg" alt="programação">
+    <p>
+        <a href="https://www.w3schools.com/">Visite a W3Schools</a>
+    </p>
+   
+    <button onclick="mudarTexto()">Clique aqui</button>
+
+    <form method="post" onsubmit="return validarForm()">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div>
+        <input type="text" id="input" placeholder="Digite sua tarefa...">
+        <button onclick="addTarefa()">Adicionar</button>
+        <ul id="list"></ul>
+    </div>
+
+</body>
+</html>
