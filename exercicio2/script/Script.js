@@ -1,7 +1,6 @@
 function buscarCep() {
     //https://viacep.com.br/ws/01001000/json/
     var url = 'https://viacep.com.br/ws/';
-    
     var cep = document.querySelector("#inputCep");
     if(inputCep.value != '' ) {
         fetch(`${url}${inputCep.value}/json/`)
@@ -17,11 +16,16 @@ function buscarCep() {
             document.querySelector("#regiao").innerHTML = 'Região: ' + dados.regiao;
             document.querySelector("#ibge").innerHTML = 'IBGE: ' + dados.ibge;
             document.querySelector("#siafi").innerHTML = 'SIAFI: ' + dados.siafi;
-            document.querySelector("#numero").innerHTML = 'Número: ' + dados.numero;
-            document.querySelector("#complemento").innerHTML = 'Complemento: ' + dados.complemento;
         })
         .catch((error) => alert(`Houve um erro na requisição!: ${error}`));
     } else {
         alert('Digite um CEP');
     }
+
+    var numero = document.getElementById('inputNumero').value;
+    var complemento = document.getElementById('inputComplemento').value;
+
+    document.getElementById("numero").innerHTML = 'Número: ' + numero;
+    document.getElementById("complemento").innerHTML = 'Complemento: ' + complemento;
+
 }
