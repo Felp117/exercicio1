@@ -18,14 +18,16 @@ function buscarCep() {
             document.querySelector("#siafi").innerHTML = 'SIAFI: ' + dados.siafi;
         })
         .catch((error) => alert(`Houve um erro na requisição!: ${error}`));
+
+        var numero = document.getElementById('inputNumero').value;
+        var complemento = document.getElementById('inputComplemento').value;
+    
+        document.getElementById("numero").innerHTML = 'Número: ' + numero;
+        document.getElementById("complemento").innerHTML = 'Complemento: ' + complemento;    
+    
     } else {
         alert('Digite um CEP');
     }
 
-    var numero = document.getElementById('inputNumero').value;
-    var complemento = document.getElementById('inputComplemento').value;
-
-    document.getElementById("numero").innerHTML = 'Número: ' + numero;
-    document.getElementById("complemento").innerHTML = 'Complemento: ' + complemento;
-
+    
 }
