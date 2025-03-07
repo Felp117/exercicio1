@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+#parteSuperior {
+    text-align: center;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 30px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+h2 {
+    margin: 10px 0 0;
+    font-size: 24px;
+}
+
+#setPiada {
+    text-align: center;
+    margin-top: 40px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#value, #updated_at {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#value {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#updated_at {
+    font-size: 14px;
+    color: #7f8c8d;
+}
